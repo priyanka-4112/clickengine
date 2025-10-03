@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>The Click Engine: Instant Buyer Traffic On Autopilot</title>
+    <meta name="description" content="Stop struggling for traffic. Get The Click Engine today and unlock a 100% done-for-you, automated stream of real buyer traffic for your affiliate offers.">
+    <meta name="keywords" content="buy the click engine, the click engine, buyer traffic, affiliate marketing traffic, jeff aman click engine, automated traffic">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Basic Reset & Global Styles --- */
+        :root {
+            --primary-color: #0D47A1; /* Deep Blue */
+            --secondary-color: #1565C0; /* Lighter Blue */
+            --accent-color: #FF6F00; /* Bright Orange for CTAs */
+            --text-color: #333;
+            --bg-color: #FFFFFF;
+            --light-bg-color: #f4f7fc;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        section {
+            padding: 60px 0;
+        }
+        h1, h2, h3 {
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        h1 { font-size: 2.8rem; color: var(--bg-color); }
+        h2 { font-size: 2.2rem; color: var(--primary-color); text-align: center;}
+        p { margin-bottom: 15px; }
+
+        /* --- Header & Hero Section --- */
+        header.hero {
+            background-image: linear-gradient(rgba(13, 71, 161, 0.8), rgba(13, 71, 161, 0.8)), url('images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        header.hero .hero-content {
+            max-width: 800px;
+            margin: auto;
+        }
+        header.hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        /* --- Buttons --- */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .cta-button:hover {
+            background-color: #e66300;
+            transform: translateY(-3px);
+        }
+
+        /* --- Problem Section --- */
+        .problem-section {
+            background-color: var(--light-bg-color);
+        }
+        .problem-list {
+            list-style: none;
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+        .problem-list li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .problem-list li::before {
+            content: '❌';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        /* --- Solution/Benefits Section --- */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .benefit-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .benefit-card h3 {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+        }
+        .benefit-card .icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* --- How It Works Section --- */
+        .how-it-works {
+            background-color: var(--light-bg-color);
+        }
+        .steps-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .step {
+            flex-basis: 30%;
+            min-width: 250px;
+            padding: 20px;
+        }
+        .step .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        /* --- Testimonials Section --- */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .testimonial-card {
+            background: var(--light-bg-color);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-color);
+        }
+        .testimonial-card .author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .testimonial-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .testimonial-card .author-name {
+            font-weight: 700;
+        }
+        
+        /* --- Final CTA Section --- */
+        .final-cta {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+        }
+        .final-cta h2 {
+            color: #fff;
+        }
+        .guarantee {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 450px;
+            margin: 30px auto 0;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .guarantee img {
+            width: 80px;
+            margin-right: 20px;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            background: #333;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* --- Media Queries for Responsiveness --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            header.hero { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get The Click Engine: Unleash 100% Real Buyer Traffic On Autopilot</h1>
+                <p>The Done-For-You Traffic Machine for Affiliate Marketers, Coaches, and Online Entrepreneurs Who Are Serious About Getting Results.</p>
+                <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Get Instant Access Now &raquo;</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="problem-section">
+            <div class="container">
+                <h2>Tired of Wasting Money on Traffic That Doesn't Convert?</h2>
+                <ul class="problem-list">
+                    <li>Struggling to find leads who are actually interested in buying?</li>
+                    <li>Overwhelmed by complex ad platforms that just drain your budget?</li>
+                    <li>Spending hours on "free" traffic methods that produce zero results?</li>
+                    <li>Worried you'll never make consistent online income without real traffic?</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2>Here's How The Click Engine Solves Your Traffic Problem, Instantly.</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="icon">📈</div>
+                        <h3>100% Real Buyer Traffic</h3>
+                        <p>Stop wasting time with freebie-seekers. Get clicks from a network of proven buyers with money to spend.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">🤖</div>
+                        <h3>Fully Automated & DFY</h3>
+                        <p>Set it up in under 3 minutes. Submit your link once and get a continuous stream of hands-free traffic.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="icon">💰</div>
+                        <h3>Incredibly Low Cost</h3>
+                        <p>Access a premium, high-converting traffic network for less than the price of a daily coffee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Getting Started is as Easy as 1-2-3...</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Grab Your Link</h3>
+                        <p>Get the URL you want to promote (affiliate link, blog post, squeeze page, etc.).</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Submit It</h3>
+                        <p>Log in to The Click Engine and submit your link to our powerful traffic rotator.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Get Traffic!</h3>
+                        <p>Sit back and watch as real, high-quality buyer clicks start flowing to your offer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>See What Our Members Are Saying...</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"I was skeptical at first, but The Click Engine is the real deal. I made my first affiliate sale within 48 hours of submitting my link. This is a no-brainer for any marketer."</p>
+                        <div class="author">
+                            <img src="images/testimonial-1.jpg" alt="Testimonial from a happy Click Engine customer">
+                            <div>
+                                <div class="author-name">Sarah J.</div>
+                                <span>Affiliate Marketer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Finally, a traffic source that's both affordable and effective. The quality of the clicks is far better than anything I've tried from solo ads. My email list is growing with actual buyers!"</p>
+                        <div class="author">
+                            <img src="images/testimonial-2.jpg" alt="Review of The Click Engine traffic quality">
+                            <div>
+                                <div class="author-name">Mike P.</div>
+                                <span>Online Coach</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"If you hate complicated tech stuff, this is for you. It's the simplest traffic generation platform I have ever used. Set it and forget it. I check my stats and see new clicks every single day."</p>
+                        <div class="author">
+                            <img src="images/testimonial-3.jpg" alt="A user praising The Click Engine's ease of use">
+                            <div>
+                                <div class="author-name">David L.</div>
+                                <span>Part-Time Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="container">
+                <h2>Stop Struggling for Traffic. Get Started Today.</h2>
+                <p>Join hundreds of successful marketers who are driving hands-free, high-converting traffic every single day.</p>
+                <br>
+                <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Yes! I Want Buyer Traffic Now!</a>
+                <div class="guarantee">
+                    <img src="images/money-back-guarantee.png" alt="The Click Engine Money Back Guarantee Seal">
+                    <p>Your purchase is protected by a 100% No-Risk, 30-Day Money-Back Guarantee.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name or Brand Name. All Rights Reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Affiliate Disclosure</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
