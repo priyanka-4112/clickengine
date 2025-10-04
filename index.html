@@ -14,6 +14,8 @@
     <!-- ** SEO OPTIMIZATION FOR BING - END ** -->
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animation On Scroll (AOS) Library for immersive effects -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
         body {
@@ -25,15 +27,16 @@
             box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
         }
         .cta-button:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px) scale(1.05);
             box-shadow: 0 6px 20px 0 rgba(0, 118, 255, 0.23);
         }
-        .feature-card {
+        /* Enhanced hover effect for cards */
+        .interactive-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        .interactive-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
         }
         .pro-con-list li {
             position: relative;
@@ -72,6 +75,10 @@
             width: 100%;
             height: 100%;
         }
+        /* Gradient background for final CTA */
+        .cta-gradient {
+            background: linear-gradient(45deg, #1f2937, #374151);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -89,20 +96,20 @@
     <!-- Hero Section -->
     <main class="container mx-auto px-6 py-12 md:py-20">
         <div class="text-center">
-            <!-- H1 Tag: Updated to reflect the review aggregator angle. -->
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+            <!-- H1 Tag with animation -->
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6" data-aos="fade-down">
                 The Click Engine Reviews (2025) – What Real Users Are Saying
             </h1>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">
                 We've analyzed dozens of user reviews to give you an unbiased breakdown of The Click Engine. Is this $4.90 traffic tool the real deal?
             </p>
-             <a href="#get-access" class="cta-button bg-indigo-600 text-white font-extrabold py-4 px-10 text-xl rounded-full hover:bg-indigo-700 my-8 inline-block">
+             <a href="#get-access" class="cta-button bg-indigo-600 text-white font-extrabold py-4 px-10 text-xl rounded-full hover:bg-indigo-700 my-8 inline-block" data-aos="fade-up" data-aos-delay="400">
                 See Best Price & User Bonuses
             </a>
         </div>
 
         <!-- Review Summary Box -->
-        <section class="bg-white rounded-lg shadow-xl p-8 my-16 border border-gray-200">
+        <section class="bg-white rounded-lg shadow-xl p-8 my-16 border border-gray-200" data-aos="zoom-in-up">
             <h2 class="text-2xl font-bold text-center text-gray-900 mb-6">Product Snapshot</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div>
@@ -125,12 +132,10 @@
         </section>
 
         <!-- "What Is The Click Engine?" Section -->
-        <section id="what-it-is" class="py-16">
+        <section id="what-it-is" class="py-16 overflow-hidden">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <!-- H2 Tag is keyword rich and clear -->
+                <div data-aos="fade-right">
                     <h2 class="text-3xl font-bold text-gray-900 mb-4">What is The Click Engine, Exactly?</h2>
-                    <!-- Content changed from first-person to third-person -->
                     <p class="text-gray-600 mb-4 leading-relaxed">
                         The Click Engine is a "traffic-on-tap" service created by Jeff Aman. Its purpose is to provide affiliate marketers and business owners a hands-free way to get real buyer traffic without the high cost and complexity of paid advertising or solo ad vendors.
                     </p>
@@ -138,23 +143,20 @@
                         It is not a course, but a done-for-you service. Users submit a link, which is then added to a traffic rotator, sending a stream of real people to their offer. The concept is especially appealing for those new to digital marketing or struggling to generate consistent traffic.
                     </p>
                 </div>
-                <div>
-                    <a href="https://us-theclickengine.com/" target="_blank">
-  <img src="https://moggziemarketing.com/wp-content/uploads/2024/02/1_P71W-SkJjuGjkoE_GnR73g.webp" alt="Example" width="500" height="300">
-</a>
-
+                <div data-aos="fade-left">
+                    <img src="https://moggziemarketing.com/wp-content/uploads/2024/02/1_P71W-SkJjuGjkoE_GnR73g.webp" alt="Diagram showing automated buyer traffic flowing into an affiliate offer." class="rounded-lg shadow-xl w-full">
                 </div>
             </div>
         </section>
 
         <!-- Pros and Cons Section -->
         <section id="pros-cons" class="py-16">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-gray-900">Commonly Cited Pros and Cons</h2>
                 <p class="text-gray-600 mt-2">Here's a summary of what users frequently mention in reviews.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-green-50 border border-green-200 p-6 rounded-lg">
+                <div class="bg-green-50 border border-green-200 p-6 rounded-lg interactive-card" data-aos="fade-right" data-aos-delay="200">
                     <h3 class="text-2xl font-bold text-green-800 mb-4">Common Praises (Pros)</h3>
                     <ul class="pro-con-list pro-list text-gray-700">
                         <li>Extremely beginner friendly; no technical skill needed.</li>
@@ -164,7 +166,7 @@
                         <li>Solid money-back guarantee offers a risk-free trial.</li>
                     </ul>
                 </div>
-                <div class="bg-red-50 border border-red-200 p-6 rounded-lg">
+                <div class="bg-red-50 border border-red-200 p-6 rounded-lg interactive-card" data-aos="fade-left" data-aos-delay="200">
                     <h3 class="text-2xl font-bold text-red-800 mb-4">Common Criticisms (Cons)</h3>
                     <ul class="pro-con-list con-list text-gray-700">
                         <li>Traffic is not instant; it ramps up over time.</li>
@@ -178,22 +180,22 @@
 
         <!-- "How Does It Work?" Section -->
         <section id="how-it-works" class="py-16 bg-white rounded-lg shadow-lg px-8">
-            <div class="text-center mb-12">
+            <div class="text-center mb-12" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-gray-900">How Does The Click Engine Work?</h2>
                 <p class="text-gray-600 mt-2">The setup process is consistently praised for its simplicity.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div class="feature-card border border-gray-200 p-6 rounded-lg">
+                <div class="interactive-card border border-gray-200 p-6 rounded-lg" data-aos="fade-up">
                     <div class="text-3xl font-bold text-indigo-600 bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">1</div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Submit Your Link</h3>
                     <p class="text-gray-600">After joining, users access a members area to submit the URL they want traffic sent to.</p>
                 </div>
-                <div class="feature-card border border-gray-200 p-6 rounded-lg">
+                <div class="interactive-card border border-gray-200 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
                     <div class="text-3xl font-bold text-indigo-600 bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">2</div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">It's Added To The Rotator</h3>
                     <p class="text-gray-600">The link is added to the system and begins receiving a share of the daily traffic.</p>
                 </div>
-                <div class="feature-card border border-gray-200 p-6 rounded-lg">
+                <div class="interactive-card border border-gray-200 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="400">
                     <div class="text-3xl font-bold text-indigo-600 bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">3</div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">You Get Traffic</h3>
                     <p class="text-gray-600">Real visitors begin arriving at the link, fully automated.</p>
@@ -202,7 +204,7 @@
         </section>
 
         <!-- The Click Engine Video Review Section -->
-        <section id="video-review" class="py-16 bg-gray-100 rounded-lg px-8">
+        <section id="video-review" class="py-16 bg-gray-100 rounded-lg px-8" data-aos="fade-in">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900">Video Review & Demo</h2>
                 <p class="text-gray-600 mt-2">See exactly how it works and what to expect inside.</p>
@@ -220,45 +222,45 @@
 
         <!-- Testimonials / Results Section -->
         <section id="results" class="py-16">
-             <div class="text-center mb-12">
+             <div class="text-center mb-12" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-gray-900">Real User Results & Testimonials</h2>
                 <p class="text-gray-600 mt-2">Here's a sample of what members are sharing online.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
-                 <div class="bg-white p-8 rounded-lg shadow-md">
+                 <div class="bg-white p-8 rounded-lg shadow-md interactive-card" data-aos="fade-up">
                     <p class="text-gray-600 italic mb-4">"I was skeptical at first, but The Click Engine is legit. I got my first affiliate sale within 48 hours of submitting my link. This is a no-brainer for anyone needing consistent traffic."</p>
                     <div class="flex items-center">
-                        <img src="https://www.bing.com/th/id/OIP.JKwY_NtRXVKFeDPermgvKQHaHa?w=188&h=211&c=8&rs=1&qlt=90&o=6&cb=12&dpr=1.3&pid=3.1&rm=2" alt="John S., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://placehold.co/50x50/e0e0e0/333333?text=JS" alt="John S., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <p class="font-bold text-gray-900">John S.</p>
                             <p class="text-sm text-gray-500">Affiliate Marketer</p>
                         </div>
                     </div>
                 </div>
-                 <div class="bg-white p-8 rounded-lg shadow-md">
+                 <div class="bg-white p-8 rounded-lg shadow-md interactive-card" data-aos="fade-up" data-aos-delay="150">
                     <p class="text-gray-600 italic mb-4">"The quality of the traffic is what surprised me. These aren't just clicks, they're converting into leads for my email list. My list growth has been on autopilot since I joined The Click Engine."</p>
                     <div class="flex items-center">
-                        <img src="https://th.bing.com/th/id/OIP.vf6tqF3ZfAAvJsEqI5-ubgHaLH?w=133&h=199&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Maria D., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://placehold.co/50x50/e0e0e0/333333?text=MD" alt="Maria D., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <p class="font-bold text-gray-900">Maria D.</p>
                             <p class="text-sm text-gray-500">Email Marketer</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="bg-white p-8 rounded-lg shadow-md interactive-card" data-aos="fade-up">
                    <p class="text-gray-600 italic mb-4">"As someone with a full-time job, I don't have hours to spend on marketing. The Click Engine is a true 'set and forget' solution. I submitted my link weeks ago and the traffic just keeps coming. It's fantastic."</p>
                    <div class="flex items-center">
-                       <img src="data:image/webp;base64,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" alt="Sarah L., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
+                       <img src="https://placehold.co/50x50/e0e0e0/333333?text=SL" alt="Sarah L., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
                        <div>
                            <p class="font-bold text-gray-900">Sarah L.</p>
                            <p class="text-sm text-gray-500">Part-Time Marketer</p>
                        </div>
                    </div>
                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="bg-white p-8 rounded-lg shadow-md interactive-card" data-aos="fade-up" data-aos-delay="150">
                    <p class="text-gray-600 italic mb-4">"I used to spend hundreds on solo ads with mixed results. For $4.90, The Click Engine delivers comparable, if not better, quality traffic for a fraction of the price. The value is just unbeatable. My go-to traffic source now."</p>
                    <div class="flex items-center">
-                       <img src="https://th.bing.com/th/id/OIP.2N8u_UiTR-l67y0dH03RFgHaHa?w=190&h=189&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Robert B., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
+                       <img src="https://placehold.co/50x50/e0e0e0/333333?text=RB" alt="Robert B., user of The Click Engine" class="w-12 h-12 rounded-full mr-4">
                        <div>
                            <p class="font-bold text-gray-900">Robert B.</p>
                            <p class="text-sm text-gray-500">Experienced Affiliate</p>
@@ -266,14 +268,14 @@
                    </div>
                </div>
             </div>
-            <div class="text-center mt-12">
+            <div class="text-center mt-12" data-aos="zoom-in">
                 <img src="https://branchoutlife.com/wp-content/uploads/2023/03/The-Click-Engine-Review-A-Traffic-Treasure-1.jpg" alt="Screenshot showing positive results or earnings from The Click Engine." class="rounded-lg shadow-xl w-full max-w-2xl mx-auto" style="width:300px; height:auto;">
                 <p class="text-sm text-gray-500 mt-4">Typical (but not guaranteed) results from using The Click Engine.</p>
             </div>
         </section>
 
          <!-- Pricing Section -->
-        <section id="pricing" class="py-16">
+        <section id="pricing" class="py-16" data-aos="fade-up">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900">The Click Engine Price & Upgrades</h2>
                 <p class="text-gray-600 mt-2">Here's a breakdown of the investment.</p>
@@ -289,7 +291,7 @@
         </section>
 
         <!-- Final CTA Section -->
-        <section id="get-access" class="py-20 text-center bg-gray-800 rounded-lg">
+        <section id="get-access" class="py-20 text-center cta-gradient rounded-lg" data-aos="zoom-in">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Final Analysis: Is It A Good Investment?</h2>
             <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
                 The general consensus is that for less than the price of a coffee, The Click Engine offers immense value. It's a low-risk, high-reward option for beginners or anyone needing consistent, targeted clicks. It is overwhelmingly recommended by its users.
@@ -309,9 +311,16 @@
         </div>
     </footer>
 
+    <!-- AOS Initialization Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // animation duration in milliseconds
+        once: true,    // whether animation should happen only once - while scrolling down
+        offset: 100,   // offset (in px) from the original trigger point
+      });
+    </script>
+
 </body>
 </html>
-<<<<<<< HEAD:clickengine.html
 
-=======
->>>>>>> 13a3c151e22122f38fc32f8e23455205ad7380e2:index.html
